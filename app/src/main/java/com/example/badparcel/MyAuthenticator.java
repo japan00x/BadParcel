@@ -1,7 +1,5 @@
 package com.example.badparcel;
 
-import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
-
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;
 import android.accounts.AccountAuthenticatorResponse;
@@ -26,6 +24,7 @@ public class MyAuthenticator extends AbstractAccountAuthenticator {
 
     @Override
     public Bundle addAccount(AccountAuthenticatorResponse accountAuthenticatorResponse, String s, String s1, String[] strings, Bundle options) throws NetworkErrorException {
+        final String TAG = "FadeMode";
         Intent intent = new Intent();
         intent.setComponent(new ComponentName("com.android.settings", "com.android.settings.password.ChooseLockPassword"));
         Bundle bundle = new Bundle();
