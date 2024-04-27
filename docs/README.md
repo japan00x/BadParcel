@@ -1,6 +1,6 @@
 # BadParcel
 
-See [Bundle Fengshui](https://chal13w1zz.github.io/posts/bundle-fengshui-android-s-self-changing-bundle/) for a deep dive on this bug class.
+See [Bundle Fengshui](https://pwnipc.github.io/posts/bundle-fengshui-android-s-self-changing-bundle/) for a deep dive on this bug class.
 
 This repository contains PoC for [CVE-2023-20963](https://source.android.com/docs/security/bulletin/2023-03-01#framework), which is mismatch in the Android WorkSource parcel/unparcel logic.
 
